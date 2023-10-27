@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "header nav";
+    grid-template-columns: 3fr 1fr;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+header h1 {
+    grid-area: header;
+    margin: 0;
+    font-size: 36px;
+}
+
+header span {
+    font-weight: normal;
+}
+
+header nav {
+    display: flex;
+    grid-area: nav;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.Tabel {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.Tabel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Tabel th, .Tabel td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.List-Sosial-Media {
+    text-align: center;
+}
+
+.List-Sosial-Media li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.List-Sosial-Media a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.Form {
+    text-align: center;
+}
+
+.Form form {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.Form label, .Form input, .Form button {
+    display: block;
+    margin: 10px auto;
+}
+
+.Form input {
+    width: 100%;
+    padding: 10px;
+}
+
+.Form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #f39c12;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.Footer .Rate {
+    margin: 10px 0;
+}
+
+.Footer .Rate input {
+    display: none;
+}
+
+.Footer .Rate label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Footer button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Introduce {
+    display: grid;
+    grid-template-areas: "gambar saya";
+
+}
+
+.Introduce img{
+    grid-area: gambar;
+
+}
+
+.saya {
+    grid-area: saya;
+
+}
