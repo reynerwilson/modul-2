@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ReynerGUNSHOP</title>
+    </head>
+    <body>
+        <form> 
+            <table>
+                <tr>
+                    <td>senjata</td>
+                    <td> 
+                        <select id="Senjata">
+                            <option value="" disabled selected hidden>Pilih salah satu</option>
+                            <option value="500000">GRANAT</option>
+                            <option value="1500000">UZI</option>
+                            <option value="2000000">UMP45</option> 
+                            <option value="2500000">M416</option> 
+                            <option value="3000000">DBS</option> 
+                            <option value="5000000">AKM</option> 
+                            <option value="8000000">AWM</option>
+                        </select>
+                    </td>
+                    <td id="submit" rowspan="3">
+                        <button type="button" id="submitButton">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jumlah</td>
+                    <td><input type="text" id="jumlah" name=""></td>
+                </tr>
+                <tr>
+                    <td>Voucher</td>
+                    <td><input type="text" id="voucher" name=""></td>
+                </tr>
+            </table>
+        </form>
+
+        <p id="hasil"></p>
+        <script src="javascript.js"></script>
+    </body>
+    </html>
