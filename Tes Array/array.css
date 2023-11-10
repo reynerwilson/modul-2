@@ -1,0 +1,112 @@
+/* CSS untuk Tic-Tac-Toe game */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    background-color: #f0f0f0; /* Tambahkan warna latar belakang */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff; /* Tambahkan warna teks */
+}
+
+.board {
+    border-radius: 20px; /* Ubah radius border */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    margin-top: 20px;
+    background-color: #fff; /* Tambahkan warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #ccc; /* Ubah warna border */
+    background-color: #fff; /* Tambahkan warna latar belakang */
+    transition: background-color 0.5s; /* Animasi perubahan warna latar belakang */
+}
+
+.cell.X {
+    color: red;
+}
+
+.cell.O {
+    color: blue;
+}
+
+.cell:hover {
+    background-color: white; /* Warna latar belakang saat dihover */
+}
+
+.status {
+    font-size: 24px;
+    margin-top: 20px;
+    color: black; /* Tambahkan warna teks */
+}
+
+#reset {
+    font-size: 18px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    margin-top: none;
+}
+
+#toggleDarkMode {
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dark-mode {
+    background-color: black; /* Ubah warna latar belakang saat mode gelap */
+    color: #fff;
+}
+
+.dark-mode .cell {
+    border: 2px solid #fff;
+    background-color: black; /* Ubah warna latar belakang sel saat mode gelap */
+}
+
+.dark-mode .cell:hover {
+    background-color: black; /* Warna latar belakang saat dihover pada mode gelap */
+}
+
+h1 {
+    font-size: 36px;
+    color: black; /* Tambahkan warna teks */
+}
+
+/* Tambahkan aturan CSS untuk judul h1 pada mode gelap */
+.dark-mode h1 {
+    color: #fff; /* Ubah warna teks pada mode gelap */
+}
